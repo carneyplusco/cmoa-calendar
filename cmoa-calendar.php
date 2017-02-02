@@ -267,7 +267,7 @@ class CMOA_Calendar {
      *
      * @param $event_list Formatted array of event data.
      */
-    apply_filters( 'carnegie_format_events_for_rest_api', $event_list );
+    $event_list = apply_filters( 'carnegie_format_events_for_rest_api', $event_list );
 
     return $event_list;
   }
